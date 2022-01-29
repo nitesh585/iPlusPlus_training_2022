@@ -11,22 +11,24 @@ Build fast, reliable, and efficient software at scale
 - [The Go Programming Language Specification](https://go.dev/ref/spec)
 - [Effective Go](https://go.dev/doc/effective_go)
 
-#### Time to write first Go program (Hello-World)
+### Time to write first Go program (Hello-World)
 
 Create file ```hello.go``` with content:
 
+```go
+package main
+import "fmt"
 
-![goHelloWorld](https://user-images.githubusercontent.com/23628103/151651499-ff53cbb3-a820-4c93-995c-c94e00b9bd4f.png)
-
+func main(){
+    fmt.Printf("Hello World\n")
+}
+```
 Import built-in package ```fmt``` and used it’s function ```Printf``` to print “Hello World” to console. 
 
-#### Go Commands
+### Go Commands
+![goCommands](https://user-images.githubusercontent.com/23628103/151651540-80c8d148-ea37-40d2-b054-7d3e0c630a60.png)
 
-
-#### Resources to start learning and practice:
+### Resources to start learning and practice:
 - [Tour of Go](https://go.dev/tour/welcome/1)
 - [Exercism Go track](https://exercism.org/tracks/go)
 - [Learn different packages](https://pkg.go.dev/)
-
-#### Go Commands
-![goCommands](https://user-images.githubusercontent.com/23628103/151651540-80c8d148-ea37-40d2-b054-7d3e0c630a60.png)
