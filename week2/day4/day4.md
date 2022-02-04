@@ -1,5 +1,6 @@
 ## Docker compose
 
+![docker compose](https://quintagroup.com/cms/technology/Images/docker-compose-button.jpg)
 Docker Compose is used to run multiple containers as a single service. For example, suppose you had an application which required NGNIX and MySQL, you could create one file which would start both the containers as a service without the need to start each one separately.
 
 ### Docker Compose ─ Installation
