@@ -242,5 +242,9 @@ func main() {
 ## Must read resources
 
 - [Go tutorial-1](https://github.com/callicoder/golang-tutorials)
+- [Go Slices: usage and internals](https://go.dev/blog/slices-intro)
+- [Arrays, slices (and strings): The mechanics of 'append'](https://go.dev/blog/slices)
+- [Go maps in action](https://go.dev/blog/maps)
+- [Go - Functions in Go language](https://ravichaganti.com/blog/get-set-go-functions-in-go-language/#named-return-values)
 - [Exercism Go](https://exercism.org/tracks/go)
 - [A Tour of Go](https://go.dev/tour/welcome/1)
