@@ -12,18 +12,27 @@ Behaviour Driven Development (BDD) is a synthesis and refinement of practices st
 In order to ensure the working of Login Functionality, we are developing acceptance test cases on the basis of BDD.
 
 > **Feature**: Login Function
+> 
 > To enter in the System
+> 
 > User must be able to
+> 
 > Access software when login is successful
 >
 > **Scenario**: Login
+> 
 > **Given** User has its Email
+> 
 > **And** Password
+> 
 > **When** User enters the correct Email and Password
+> 
 > **Then** It should be logged in
 >
 > **Scenario**: Unsuccessful Login
+> 
 > **When** User enters either wrong Email or Password
+> 
 > **Then** It should be reverse back on the login page with an error message
 
 Several BDD Tools are in use for different platforms and programming languages. They are −
