@@ -3,6 +3,7 @@
 ### Select
 
 ![select-go-lang](https://559987-1802630-raikfcquaxqncofqfm.stackpathdns.com/assets/images/go/package/image8.png)
+
 GoLang select statement is like the switch statement, which is used for multiple channels operation. This statement blocks until any of the cases provided are ready.
 Select statements work like switch statements but instead of having concrete cases it has operations that are either sending or receiving using channels.
 
