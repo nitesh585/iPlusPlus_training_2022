@@ -1,0 +1,186 @@
+{"_comments": "address"}
+{
+    "$id": "id",
+    "type": "address object",
+    "properties": {
+      "House/Street No": {
+        "type": "string",
+        "description": "House and Street number"
+      },
+      "District": {
+        "type": "district object",
+        "properties": {
+          "districtID": {
+            "type": "number",
+            "description": "district code"
+          },
+          "districtName": {
+            "type": "string"
+          }
+        }
+      },
+      "city": {
+        "type": "string"
+      },
+      "State": {
+        "type": "string"
+      },
+  
+      "country": {
+        "type": "object",
+        "properties": {
+          "countryCode": {
+            "type": "number",
+            "description": "unique country code"
+          }
+        }
+      },
+      "pincode": {
+        "type": "number"
+      },
+      "nearBy": {
+        "type": "string",
+        "description": "optional field"
+      }
+    }
+  }
+
+{"_comments": "user"}
+{
+    "$id": "ObjectId",
+    "type": "user object",
+    "properties": {
+      "firstName": {
+        "type": "string"
+      },
+  
+      "lastName": {
+        "type": "string"
+      },
+  
+      "password": {
+        "type": "string",
+        "description": "hashed version of user password"
+      },
+      "email": {
+        "type": "string",
+        "description": "valid formatted email id"
+      },
+      "phone": {
+        "type": "object",
+        "properties": {
+          "countryCode": {
+            "type": "number"
+          },
+          "contactNumber": {
+            "type": "number"
+          }
+        }
+      },
+      "token": {
+        "type": "string",
+        "description": "jwt token of user"
+      },
+      "createdAt": {
+        "type": "date",
+        "description": "registration date of user"
+      },
+  
+      "bookingDetailsID": {
+        "type": "string",
+        "description": "id of record which stores all the booking information of user"
+      }
+    }
+  }
+    
+{"_comments": "train"}
+{
+    "$id": "ObjectId",
+    "type": "train object",
+    "properties": {
+      "trainName": {
+        "type": "string"
+      },
+      "trianNumber": {
+        "type": "number",
+        "description": "unique train number"
+      },
+      "fromStationCode": {
+        "type": "string",
+        "description": "station code from where train starts"
+      },
+      "toStationCode": {
+        "type": "string",
+        "description": "destination station code"
+      },
+      "arrivalTime": {
+        "type": "time"
+      },
+      "departureTime": {
+        "type": "time"
+      },
+      "Distance": {
+        "type": "number"
+      },
+      "Duration": {
+        "type": "time",
+        "description": "time take by train from its source to destination station"
+      },
+      "weekDayAvaliability": {
+        "type": "object",
+        "properties": {
+          "runningMon": {
+            "type": "bool",
+            "description": "train is available on Monday or not"
+          },
+          "runningTue": {
+            "type": "bool",
+            "description": "train is available on Tuesday or not"
+          },
+          "runningWed": {
+            "type": "bool",
+            "description": "train is available on Wednesday or not"
+          },
+          "runningThr": {
+            "type": "bool",
+            "description": "train is available on Thursday or not"
+          },
+          "runningFri": {
+            "type": "bool",
+            "description": "train is available on Friday or not"
+          },
+          "runningSat": {
+            "type": "bool",
+            "description": "train is available on Saturday or not"
+          },
+          "runningSun": {
+            "type": "bool",
+            "description": "train is available on Sunday or not"
+          }
+        }
+      },
+      "avlClasses": {
+        "type": "array",
+        "descrption": "type of different classes available in train e.g. SL, AC-1,AC-2 ,etc"
+      },
+      "Stations": {
+        "type": "station object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "descrption": "unique station id"
+          },
+          "name": {
+            "type": "string",
+            "description": "station name"
+          },
+          "code": {
+            "type": "string",
+            "description": "unique station code"
+          }
+        },
+        "descriptions": "intermediate stations covered by train"
+      }
+    }
+  }
+  
